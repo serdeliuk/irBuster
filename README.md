@@ -153,7 +153,7 @@ And this is a 0 (zero)
 
 So, if this is the situation, in order to send a zero after a one we need to change the pattern, how to to that, the original IR command use complicated patern so i found easier to change the pulse by adding a small value before the bit,
 Basically if we want to send `0b101 ` binary value we will use following pulse line
-
+ | LEADER |  1    |   0     |    1    |<br> 
  +++++----++++----++----++++--++++----<br>
  2472,914,457,457,1,457,457,1,457,457<br>
 
