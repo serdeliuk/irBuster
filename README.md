@@ -19,7 +19,7 @@
 - BUST IR button send command flipping the toggle bit each time is pressed
 - +/- button increase or decrease value of their respective nibbles
 - toggle button flip the toggle bit
-- mode button change all four between Vu+ universal remote control modes
+- mode button change between all four modes of the Vu+ universal remote control
 - in the footer of the screen you can see the actual command as IR values in usec
 
 # Story
