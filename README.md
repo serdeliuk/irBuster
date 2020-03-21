@@ -121,10 +121,10 @@ For this I used `mode2` command
 5. If you remove first space line and copy comma separated all those numbers and send them to the IR blaster driver you will emit corresponding command regardless the knowledge of what is in this command.
 
 `
-- public final int[] KEY_1 = {2742, 914, 457, 457, 457, 457, 457, 914, 457, 914, 1371, 914, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 914, 914, 914, 914, 457, 457, 914, 914, 457, 457, 457, 457, 457, 457, 914, 914, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 914, 9702};  // 0x80521001
-- ConsumerIrManager msCIB;
-- msCIB = (ConsumerIrManager)getSystemService(Context.CONSUMER_IR_SERVICE);
--msCIB.transmit(36000, KEY_1);
+ - public final int[] KEY_1 = {2742, 914, 457, 457, 457, 457, 457, 914, 457, 914, 1371, 914, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 914, 914, 914, 914, 457, 457, 914, 914, 457, 457, 457, 457, 457, 457, 914, 914, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 914, 9702};  // 0x80521001
+ - ConsumerIrManager msCIB;
+ - msCIB = (ConsumerIrManager)getSystemService(Context.CONSUMER_IR_SERVICE);
+ - msCIB.transmit(36000, KEY_1);
 `
 
 6. The above code will send the IR command, as simple as that :)
