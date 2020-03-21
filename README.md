@@ -156,7 +156,7 @@ Basically if we want to send `0b101 ` binary value we will use following pulse l
  
  +++++----++++----++----++++--++++----<br>
  2472,914,457,457,1,457,457,1,457,457<br>
-
+ <-lead--><--1--><----0---><----1--->
 As you can see the tiny usec (1) spent there change the pulse on or off as we need to set the values. This mean that we need to always know what was the last pulse value, high or low.
 
 That's all folks!!!<br>
