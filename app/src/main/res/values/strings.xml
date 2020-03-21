@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">irBuster</string>
+    <string name="ir_send">Send IR</string>
+    <string name="ir_get_freqs">Show Blaster Frequencies</string>
+    <string name="bust">BUST IR </string>
+    <string name="prev"><![CDATA[< PREV]]></string>
+    <string name="next"><![CDATA[NEXT >]]></string>
+    <string name="command">00</string>
+
+</resources>
