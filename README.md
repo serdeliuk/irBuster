@@ -54,77 +54,77 @@ For this I used `mode2` command
 
 4. The `mode2 --driver default --device /dev/lirc0` command will have following output
 
-space 5117600
-pulse 2692
-space 914
-pulse 406
-space 457
-pulse 457
-space 457
-pulse 457
-space 914
-pulse 406
-space 965
-pulse 1320
-space 914
-pulse 457
-space 457
-pulse 406
-space 457
-pulse 457
-space 457
-pulse 457
-space 457
-pulse 457
-space 457
-pulse 406
-space 508
-pulse 406
-space 457
-pulse 914
-space 914
-pulse 863
-space 914
-pulse 457
-space 457
-pulse 914
-space 914
-pulse 863
-space 914
-pulse 457
-space 457
-pulse 914
-space 914
-pulse 406
-space 457
-pulse 457
-space 457
-pulse 457
-space 457
-pulse 457
-space 457
-pulse 406
-space 457
-pulse 457
-space 457
-pulse 457
-space 457
-pulse 457
-space 457
-pulse 406
-space 508
-pulse 406
-space 457
-pulse 914
-pulse 9702
+ space 5117600
+ pulse 2692
+ space 914
+ pulse 406
+ space 457
+ pulse 457
+ space 457
+ pulse 457
+ space 914
+ pulse 406
+ space 965
+ pulse 1320
+ space 914
+ pulse 457
+ space 457
+ pulse 406
+ space 457
+ pulse 457
+ space 457
+ pulse 457
+ space 457
+ pulse 457
+ space 457
+ pulse 406
+ space 508
+ pulse 406
+ space 457
+ pulse 914
+ space 914
+ pulse 863
+ space 914
+ pulse 457
+ space 457
+ pulse 914
+ space 914
+ pulse 863
+ space 914
+ pulse 457
+ space 457
+ pulse 914
+ space 914
+ pulse 406
+ space 457
+ pulse 457
+ space 457
+ pulse 457
+ space 457
+ pulse 457
+ space 457
+ pulse 406
+ space 457
+ pulse 457
+ space 457
+ pulse 457
+ space 457
+ pulse 457
+ space 457
+ pulse 406
+ space 508
+ pulse 406
+ space 457
+ pulse 914
+ pulse 9702
 
 5. If you remove first space line and copy comma separated all those numbers and send them to the IR blaster driver you will emit corresponding command regardless the knowledge of what is in this command.
 
 `
-public final int[] KEY_1 = {2742, 914, 457, 457, 457, 457, 457, 914, 457, 914, 1371, 914, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 914, 914, 914, 914, 457, 457, 914, 914, 457, 457, 457, 457, 457, 457, 914, 914, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 914, 9702};  // 0x80521001
-ConsumerIrManager msCIB;
-msCIB = (ConsumerIrManager)getSystemService(Context.CONSUMER_IR_SERVICE);
-msCIB.transmit(36000, KEY_1);
+- public final int[] KEY_1 = {2742, 914, 457, 457, 457, 457, 457, 914, 457, 914, 1371, 914, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 914, 914, 914, 914, 457, 457, 914, 914, 457, 457, 457, 457, 457, 457, 914, 914, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 457, 914, 9702};  // 0x80521001
+- ConsumerIrManager msCIB;
+- msCIB = (ConsumerIrManager)getSystemService(Context.CONSUMER_IR_SERVICE);
+-msCIB.transmit(36000, KEY_1);
 `
 
 6. The above code will send the IR command, as simple as that :)
@@ -137,29 +137,29 @@ msCIB.transmit(36000, KEY_1);
  - An encoded bit is a sequence of 444usec on and another 444usc off, this bit will be 1, if you inverse the order, first sequence is off and second on then the bit is 0
  As following
 
-+++++----++++----++++----
-2472,914,457,457,457,457
+ +++++----++++----++++----<br>
+ 2472,914,457,457,457,457<br>
 
 Where + represent ON and - OFF, above we just sent the IR trailer and two bits with value 1 and 1
 
-This is 1
-++++---
-457,457
+This is 1<br>
+++++---<br>
+457,457<br>
 
 And this is a 0 (zero)
 
-----++++
-457,457
+----++++<br>
+457,457<br>
 
 So, if this is the situation, in order to send a zero after a one we need to change the pattern, how to to that, the original IR command use complicated patern so i found easier to change the pulse by adding a small value before the bit,
 Basically if we want to send `0b101 ` binary value we will use following pulse line
-+++++----++++----++----++++--++++----
-2472,914,457,457,1,457,457,1,457,457
++++++----++++----++----++++--++++----<br>
+2472,914,457,457,1,457,457,1,457,457<br>
 
 As you can see the tiny usec (1) spent there change the pulse on or off as we need to set the values. This mean that we need to always know what was the last pulse value, high or low.
 
-That's all folks!!!
-I hope that will help in your future projects
+That's all folks!!!<br>
+I hope that will help in your future projects<br>
 
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/serdeliuk) any donation is highly appreciated!
