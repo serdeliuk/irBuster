@@ -1,5 +1,10 @@
 
-# irBuster
+# irBuster [![download](https://img.shields.io/github/v/release/serdeliuk/macAura?style=plastic)](https://github.com/serdeliuk/irBuster/releases/download/1/irBuster.apk.zip)
+
+
+
+
+# Story
 
 ### This is an Adroid infrared application which use irblaster to sends custom crafted `RC6 mode 6 submode 6A 32bit`, `rc6_6a_32` or `RC6_mode_6`
 ### Was tested on a Xiaomi Redmi note 7 and it is able to send all possible IR commands for any device which use this IR protocol.
@@ -20,9 +25,6 @@
 - mode button change all four between Vu+ universal remote control modes
 - in the footer of the screen you can see the actual command as IR values in usec
 
-[![download](https://img.shields.io/github/v/release/serdeliuk/macAura?style=plastic)](https://github.com/serdeliuk/irBuster/releases/download/1/irBuster.apk.zip)
-
-# Story
 Working to port an emulator to my Vu+ Solo4K STB receiver i noticed that the kernel proprietary module allow a lot of other keys to be sent over IR than the actual remote control has.
 Just to have an idea the original RC has 43 working buttons but the kernel driver accept 91 keys, almost a full QWERTY.
 So, why not build an android IR keyboard? But how to find all codes to be sent over IR, well... here comes the **irBuster**
