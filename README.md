@@ -37,14 +37,14 @@ Using lirc drivers under Linux combining `mode2` and `ir-keytable` commands you 
 `ir-keytable -s rc0 -t`
 
 This is a sample output `lirc protocol(rc6_6a_32): scancode = 0x80529001` pressing KEY_1 on Vu+ remote control, if you press again that key you will notice the toggle bit
-0x80529001
-0x80521001
+0x80529001<br>
+0x80521001<br>
 
 So the toggle bit is in the msb nibble of the second lsb byte and the key itself is in the lsb byte, we can see this by pressing different keys
-0x80529001
-0x80521002
-0x80529003
-0x80529004
+0x80529001<br>
+0x80521002<br>
+0x80529003<br>
+0x80529004<br>
 
 So far we found that the infrared protocol is RC6 mode 6 submode 6A which works on 36Khz and has a command on 32bit and the last two bytes contain toggle bit and the key command.
 Well, this mean that other two bytes contain the customer ID which a long customer id.
