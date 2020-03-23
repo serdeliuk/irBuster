@@ -1,0 +1,109 @@
+# Vu+ Solo 4K Remote Control RC6_mode6_6A 32bit key table
+# Original remote control keys, 43 working keys
+# IR CODE   EV KEY        EV CODE 
+0x80529000  KEY_0              11
+0x80529010  KEY_1               2
+0x80529020  KEY_2               3
+0x80529030  KEY_3               4
+0x80529004  KEY_4               5
+0x80529005  KEY_5               6
+0x80529006  KEY_6               7
+0x80529007  KEY_7               8
+0x80529008  KEY_8               9
+0x80529009  KEY_9              10
+0x8052900c  KEY_POWER         116
+0x8052900d  KEY_MUTE          113
+0x80529010  KEY_VOLUMEUP      115
+0x80529011  KEY_VOLUMEDOWN    114
+0x80529020  KEY_CHANNELUP     402
+0x80529021  KEY_CHANNELDOWN   403
+0x80529028  KEY_FASTFORWARD   208
+0x80529029  KEY_REWIND        168
+0x8052902c  KEY_PLAY          207
+0x80529030  KEY_PLAYPAUSE     164
+0x80529031  KEY_STOP          128
+0x80529037  KEY_RECORD        167
+0x8052903c  KEY_TEXT          388
+0x80529049  KEY_VIDEO         393
+0x8052904b  KEY_SUBTITLE      370
+0x80529054  KEY_MENU          139
+0x80529055  KEY_EXIT          174
+0x80529058  KEY_UP            103
+0x80529059  KEY_DOWN          108
+0x8052905a  KEY_LEFT          105
+0x8052905b  KEY_RIGHT         106
+0x8052905c  KEY_OK            352
+0x8052906d  KEY_RED           398
+0x8052906e  KEY_GREEN         399
+0x8052906f  KEY_YELLOW        400
+0x80529070  KEY_BLUE          401
+0x80529081  KEY_HELP          138
+0x805290bb  KEY_PREVIOUS      412
+0x805290bc  KEY_NEXT          407
+0x805290cc  KEY_INFO          358
+0x805290e4  KEY_TV            377
+0x805290e5  KEY_AUDIO         392
+0x805290f2  KEY_RADIO         385
+
+# new working keys discovered with irBuster
+0x8052902d KEY_PLAYPAUSE      164
+0x805290b9 KEY_HOME           102
+0x805290ba KEY_END            107
+0x805290e4 KEY_TAPE           384
+0x805290e6 KEY_EDIT           176
+
+# to be discovered
+    Event code 12 (KEY_MINUS)
+    Event code 13 (KEY_EQUAL)
+    Event code 14 (KEY_BACKSPACE)
+    Event code 16 (KEY_Q)
+    Event code 17 (KEY_W)
+    Event code 18 (KEY_E)
+    Event code 19 (KEY_R)
+    Event code 20 (KEY_T)
+    Event code 21 (KEY_Y)
+    Event code 22 (KEY_U)
+    Event code 23 (KEY_I)
+    Event code 24 (KEY_O)
+    Event code 25 (KEY_P)
+    Event code 28 (KEY_ENTER)
+    Event code 30 (KEY_A)
+    Event code 31 (KEY_S)
+    Event code 32 (KEY_D)
+    Event code 33 (KEY_F)
+    Event code 34 (KEY_G)
+    Event code 35 (KEY_H)
+    Event code 36 (KEY_J)
+    Event code 37 (KEY_K)
+    Event code 38 (KEY_L)
+    Event code 39 (KEY_SEMICOLON)
+    Event code 40 (KEY_APOSTROPHE)
+    Event code 41 (KEY_GRAVE)
+    Event code 42 (KEY_LEFTSHIFT)
+    Event code 43 (KEY_BACKSLASH)
+    Event code 44 (KEY_Z)
+    Event code 45 (KEY_X)
+    Event code 46 (KEY_C)
+    Event code 47 (KEY_V)
+    Event code 48 (KEY_B)
+    Event code 49 (KEY_N)
+    Event code 50 (KEY_M)
+    Event code 51 (KEY_COMMA)
+    Event code 52 (KEY_DOT)
+    Event code 53 (KEY_SLASH)
+    Event code 56 (KEY_LEFTALT)
+    Event code 57 (KEY_SPACE)
+    Event code 100 (KEY_RIGHTALT)
+    Event code 104 (KEY_PAGEUP)
+    Event code 109 (KEY_PAGEDOWN)
+    Event code 272 (BTN_LEFT)
+    Event code 273 (BTN_RIGHT)
+  Event type 3 (EV_ABS)
+    Event code 0 (ABS_X)
+      Value      0
+      Min        0
+      Max     1280
+    Event code 1 (ABS_Y)
+      Value      0
+      Min        0
+      Max      720
