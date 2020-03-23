@@ -162,9 +162,9 @@ Basically if we want to send `0b101 ` binary value we will use following pulse l
 As you can see the tiny usec (1) spent there change the pulse on or off as we need to set the values. This mean that we need to always know what was the last pulse value, high or low and **REMEMBER** that the last value **9702** is alwais zero
 
 8. The [vusolo4k-keys.txt](https://github.com/serdeliuk/irBuster/blob/master/vusolo4k-keys.txt) contain Vu+ Solo4K IR RC6 hex codes.
- -- The existing RC keys
- -- New keys discovered with irBuster which are not on the remote control
- -- Keys which remains to be discovered with irBuster
+ - The existing RC keys
+ - New keys discovered with irBuster which are not on the remote control
+ - Keys which remains to be discovered with irBuster
  
 That's all folks!!!<br>
 I hope that will help in your future projects<br>
