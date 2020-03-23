@@ -36,7 +36,7 @@ Using lirc drivers under Linux combining `mode2` and `ir-keytable` commands you 
 2. show rc key presses
 `ir-keytable -s rc0 -t`
 
-This is a sample output `lirc protocol(rc6_6a_32): scancode = 0x80529001` pressing KEY_1 on Vu+ remote control, if you press again that key you will notice the toggle bit
+This is a sample output `lirc protocol(rc6_6a_32): scancode = 0x80529001` pressing KEY_1 on Vu+ remote control, if you press again that key you will notice the toggle bit<br>
 0x80529001<br>
 0x80521001<br>
 
