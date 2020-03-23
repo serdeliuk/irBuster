@@ -2,9 +2,9 @@
 # Original remote control keys, 43 working keys
 # IR CODE   EV KEY        EV CODE 
 0x80529000  KEY_0              11
-0x80529010  KEY_1               2
-0x80529020  KEY_2               3
-0x80529030  KEY_3               4
+0x80529001  KEY_1               2
+0x80529002  KEY_2               3
+0x80529003  KEY_3               4
 0x80529004  KEY_4               5
 0x80529005  KEY_5               6
 0x80529006  KEY_6               7
