@@ -3,7 +3,9 @@
 
 
 
-### This is an Adroid infrared application which use irblaster to sends custom crafted commands over IR on `RC6 6A`, `RC6 mode 6 submode 6A 32bit`, `rc6_6a_32` or `RC6_mode_6` protocol
+### This is an Adroid infrared application which use irblaster to sends custom crafted commands over IR
+##### Currently support
+ - `RC6` all modes, including `RC6 6A`, `RC6 mode 6 submode 6A 32bit`, `rc6_6a_32` or `RC6_mode_6` protocol
 
 ### Was tested on a Xiaomi Redmi note 7 and it is able to send all possible IR commands for any device which use this IR protocol.
 
