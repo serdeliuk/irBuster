@@ -40,7 +40,7 @@ This is a sample output `lirc protocol(rc6_6a_32): scancode = 0x80529001` pressi
 0x80529001<br>
 0x80521001<br>
 
-So the toggle bit is in the msb nibble of the second lsb byte and the key itself is in the lsb byte, we can see this by pressing different keys
+So the toggle bit is in the msb nibble of the second lsb byte and the key itself is in the lsb byte, we can see this by pressing different keys<br>
 0x80529001<br>
 0x80521002<br>
 0x80529003<br>
