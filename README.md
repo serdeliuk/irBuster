@@ -1,5 +1,5 @@
 
-# irBuster [![download](https://img.shields.io/github/v/release/serdeliuk/irBuster?style=plastic)](https://github.com/serdeliuk/irBuster/releases/download/1/irBuster.apk.zip)
+# irBuster [![download irBuster.apk.zip](https://img.shields.io/github/v/release/serdeliuk/irBuster?style=plastic)](https://github.com/serdeliuk/irBuster/releases/download/1/irBuster.apk.zip)
 
 
 
