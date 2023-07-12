@@ -2,6 +2,9 @@
 # irBuster [![download irBuster.apk.zip](https://img.shields.io/github/downloads/serdeliuk/irBuster/total)](https://github.com/serdeliuk/irBuster/releases/download/1/irBuster.apk.zip)
 
 
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/serdeliuk) any donation is highly appreciated!
+
+
 
 ### This is an Adroid infrared application which use irblaster to sends custom crafted commands over IR , default rc6_6a_32
 ##### Currently support
@@ -170,6 +173,3 @@ As you can see the tiny usec (1) spent there change the pulse on or off as we ne
  
 That's all folks!!!<br>
 I hope that will help in your future projects<br>
-
-
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/serdeliuk) any donation is highly appreciated!
